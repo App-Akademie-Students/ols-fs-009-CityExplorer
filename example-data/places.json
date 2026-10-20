@@ -1,0 +1,1053 @@
+[
+  {
+    "name": "Volkspark Friedrichshain",
+    "category": "park",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.437,
+        52.528
+      ]
+    },
+    "address": {
+      "district": "Friedrichshain",
+      "city": "Berlin"
+    },
+    "tags": [
+      "park",
+      "running",
+      "playground"
+    ],
+    "rating": 4.6
+  },
+  {
+    "name": "Tiergarten",
+    "category": "park",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.35,
+        52.514
+      ]
+    },
+    "address": {
+      "district": "Tiergarten",
+      "city": "Berlin"
+    },
+    "tags": [
+      "park",
+      "walking",
+      "lake"
+    ],
+    "rating": 4.7
+  },
+  {
+    "name": "Tempelhofer Feld",
+    "category": "park",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.405,
+        52.473
+      ]
+    },
+    "address": {
+      "district": "Tempelhof",
+      "city": "Berlin"
+    },
+    "tags": [
+      "park",
+      "cycling",
+      "skating",
+      "kite"
+    ],
+    "rating": 4.8
+  },
+  {
+    "name": "Treptower Park",
+    "category": "park",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.47,
+        52.488
+      ]
+    },
+    "address": {
+      "district": "Treptow",
+      "city": "Berlin"
+    },
+    "tags": [
+      "park",
+      "river",
+      "walking"
+    ],
+    "rating": 4.5
+  },
+  {
+    "name": "Mauerpark",
+    "category": "park",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.402,
+        52.544
+      ]
+    },
+    "address": {
+      "district": "Prenzlauer Berg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "park",
+      "flea-market",
+      "karaoke"
+    ],
+    "rating": 4.4
+  },
+  {
+    "name": "Görlitzer Park",
+    "category": "park",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.437,
+        52.496
+      ]
+    },
+    "address": {
+      "district": "Kreuzberg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "park",
+      "bbq",
+      "playground"
+    ],
+    "rating": 3.9
+  },
+  {
+    "name": "Park am Gleisdreieck",
+    "category": "park",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.375,
+        52.499
+      ]
+    },
+    "address": {
+      "district": "Kreuzberg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "park",
+      "skating",
+      "urban-garden"
+    ],
+    "rating": 4.6
+  },
+  {
+    "name": "Schlosspark Charlottenburg",
+    "category": "park",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.295,
+        52.521
+      ]
+    },
+    "address": {
+      "district": "Charlottenburg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "park",
+      "palace",
+      "walking"
+    ],
+    "rating": 4.7
+  },
+  {
+    "name": "Viktoriapark",
+    "category": "park",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.382,
+        52.488
+      ]
+    },
+    "address": {
+      "district": "Kreuzberg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "park",
+      "waterfall",
+      "view"
+    ],
+    "rating": 4.5
+  },
+  {
+    "name": "Hasenheide",
+    "category": "park",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.416,
+        52.484
+      ]
+    },
+    "address": {
+      "district": "Neukölln",
+      "city": "Berlin"
+    },
+    "tags": [
+      "park",
+      "running",
+      "zoo"
+    ],
+    "rating": 4.2
+  },
+  {
+    "name": "Brandenburger Tor",
+    "category": "sight",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.378,
+        52.516
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "landmark",
+      "history",
+      "photo"
+    ],
+    "rating": 4.7
+  },
+  {
+    "name": "Reichstagsgebäude",
+    "category": "sight",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.376,
+        52.519
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "landmark",
+      "parliament",
+      "dome"
+    ],
+    "rating": 4.6
+  },
+  {
+    "name": "Museumsinsel",
+    "category": "museum",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.401,
+        52.521
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "museum",
+      "unesco",
+      "art"
+    ],
+    "rating": 4.8
+  },
+  {
+    "name": "Pergamonmuseum",
+    "category": "museum",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.397,
+        52.521
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "museum",
+      "antiquity",
+      "history"
+    ],
+    "rating": 4.6
+  },
+  {
+    "name": "Neue Nationalgalerie",
+    "category": "museum",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.369,
+        52.508
+      ]
+    },
+    "address": {
+      "district": "Tiergarten",
+      "city": "Berlin"
+    },
+    "tags": [
+      "museum",
+      "modern-art",
+      "architecture"
+    ],
+    "rating": 4.5
+  },
+  {
+    "name": "Deutsches Technikmuseum",
+    "category": "museum",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.377,
+        52.499
+      ]
+    },
+    "address": {
+      "district": "Kreuzberg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "museum",
+      "technology",
+      "family"
+    ],
+    "rating": 4.6
+  },
+  {
+    "name": "Jüdisches Museum Berlin",
+    "category": "museum",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.395,
+        52.502
+      ]
+    },
+    "address": {
+      "district": "Kreuzberg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "museum",
+      "history",
+      "architecture"
+    ],
+    "rating": 4.7
+  },
+  {
+    "name": "East Side Gallery",
+    "category": "sight",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.439,
+        52.505
+      ]
+    },
+    "address": {
+      "district": "Friedrichshain",
+      "city": "Berlin"
+    },
+    "tags": [
+      "landmark",
+      "street-art",
+      "wall"
+    ],
+    "rating": 4.4
+  },
+  {
+    "name": "Fernsehturm",
+    "category": "sight",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.409,
+        52.521
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "landmark",
+      "view",
+      "restaurant"
+    ],
+    "rating": 4.4
+  },
+  {
+    "name": "Gedenkstätte Berliner Mauer",
+    "category": "sight",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.39,
+        52.535
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "memorial",
+      "history",
+      "wall"
+    ],
+    "rating": 4.8
+  },
+  {
+    "name": "Markthalle Neun",
+    "category": "market",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.431,
+        52.502
+      ]
+    },
+    "address": {
+      "district": "Kreuzberg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "market",
+      "street-food",
+      "regional"
+    ],
+    "rating": 4.6
+  },
+  {
+    "name": "Türkenmarkt am Maybachufer",
+    "category": "market",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.428,
+        52.491
+      ]
+    },
+    "address": {
+      "district": "Neukölln",
+      "city": "Berlin"
+    },
+    "tags": [
+      "market",
+      "vegetables",
+      "canal"
+    ],
+    "rating": 4.5
+  },
+  {
+    "name": "Flohmarkt am Boxhagener Platz",
+    "category": "market",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.459,
+        52.51
+      ]
+    },
+    "address": {
+      "district": "Friedrichshain",
+      "city": "Berlin"
+    },
+    "tags": [
+      "flea-market",
+      "vintage",
+      "sunday"
+    ],
+    "rating": 4.2
+  },
+  {
+    "name": "Kollwitzplatz Wochenmarkt",
+    "category": "market",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.419,
+        52.538
+      ]
+    },
+    "address": {
+      "district": "Prenzlauer Berg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "market",
+      "organic",
+      "regional"
+    ],
+    "rating": 4.3
+  },
+  {
+    "name": "Curry 36",
+    "category": "restaurant",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.388,
+        52.493
+      ]
+    },
+    "address": {
+      "district": "Kreuzberg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "currywurst",
+      "fast-food",
+      "snack"
+    ],
+    "rating": 4.1
+  },
+  {
+    "name": "Mustafas Gemüse Kebap",
+    "category": "restaurant",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.388,
+        52.494
+      ]
+    },
+    "address": {
+      "district": "Kreuzberg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "kebab",
+      "vegetarian",
+      "street-food"
+    ],
+    "rating": 4.3
+  },
+  {
+    "name": "Zur letzten Instanz",
+    "category": "restaurant",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.416,
+        52.516
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "german",
+      "traditional",
+      "history"
+    ],
+    "rating": 4.2
+  },
+  {
+    "name": "Clärchens Ballhaus",
+    "category": "restaurant",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.396,
+        52.526
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "pizza",
+      "dancing",
+      "historic"
+    ],
+    "rating": 4.0
+  },
+  {
+    "name": "Cafe Bravo",
+    "category": "cafe",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.396,
+        52.523
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "cafe",
+      "art",
+      "brunch"
+    ],
+    "rating": 4.4
+  },
+  {
+    "name": "The Barn Roastery",
+    "category": "cafe",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.405,
+        52.531
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "cafe",
+      "coffee",
+      "specialty"
+    ],
+    "rating": 4.6
+  },
+  {
+    "name": "Bonanza Coffee Heroes",
+    "category": "cafe",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.41,
+        52.54
+      ]
+    },
+    "address": {
+      "district": "Prenzlauer Berg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "cafe",
+      "coffee",
+      "roastery"
+    ],
+    "rating": 4.5
+  },
+  {
+    "name": "Distrikt Coffee",
+    "category": "cafe",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.4,
+        52.524
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "cafe",
+      "brunch",
+      "coffee"
+    ],
+    "rating": 4.4
+  },
+  {
+    "name": "Berghain",
+    "category": "club",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.443,
+        52.511
+      ]
+    },
+    "address": {
+      "district": "Friedrichshain",
+      "city": "Berlin"
+    },
+    "tags": [
+      "club",
+      "techno",
+      "nightlife"
+    ],
+    "rating": 4.3
+  },
+  {
+    "name": "Watergate",
+    "category": "club",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.443,
+        52.501
+      ]
+    },
+    "address": {
+      "district": "Kreuzberg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "club",
+      "electronic",
+      "river-view"
+    ],
+    "rating": 4.1
+  },
+  {
+    "name": "Klunkerkranich",
+    "category": "bar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.434,
+        52.481
+      ]
+    },
+    "address": {
+      "district": "Neukölln",
+      "city": "Berlin"
+    },
+    "tags": [
+      "bar",
+      "rooftop",
+      "view"
+    ],
+    "rating": 4.3
+  },
+  {
+    "name": "Zosch",
+    "category": "bar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.404,
+        52.521
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "bar",
+      "live-music",
+      "cocktails"
+    ],
+    "rating": 4.0
+  },
+  {
+    "name": "Prater Garten",
+    "category": "bar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.41,
+        52.54
+      ]
+    },
+    "address": {
+      "district": "Prenzlauer Berg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "beer-garden",
+      "outdoor",
+      "traditional"
+    ],
+    "rating": 4.4
+  },
+  {
+    "name": "Hackesche Höfe",
+    "category": "shopping",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.402,
+        52.524
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "shopping",
+      "courtyards",
+      "culture"
+    ],
+    "rating": 4.3
+  },
+  {
+    "name": "KaDeWe",
+    "category": "shopping",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.341,
+        52.502
+      ]
+    },
+    "address": {
+      "district": "Schöneberg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "department-store",
+      "luxury",
+      "food-hall"
+    ],
+    "rating": 4.4
+  },
+  {
+    "name": "Bikini Berlin",
+    "category": "shopping",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.337,
+        52.506
+      ]
+    },
+    "address": {
+      "district": "Charlottenburg",
+      "city": "Berlin"
+    },
+    "tags": [
+      "concept-mall",
+      "design",
+      "zoo-view"
+    ],
+    "rating": 4.2
+  },
+  {
+    "name": "Zoo Berlin",
+    "category": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.338,
+        52.508
+      ]
+    },
+    "address": {
+      "district": "Tiergarten",
+      "city": "Berlin"
+    },
+    "tags": [
+      "zoo",
+      "family",
+      "animals"
+    ],
+    "rating": 4.5
+  },
+  {
+    "name": "Berliner Philharmonie",
+    "category": "culture",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.37,
+        52.51
+      ]
+    },
+    "address": {
+      "district": "Tiergarten",
+      "city": "Berlin"
+    },
+    "tags": [
+      "concert",
+      "classical",
+      "architecture"
+    ],
+    "rating": 4.8
+  },
+  {
+    "name": "Berliner Ensemble",
+    "category": "culture",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.388,
+        52.522
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "theater",
+      "drama",
+      "historic"
+    ],
+    "rating": 4.5
+  },
+  {
+    "name": "Admiralspalast",
+    "category": "culture",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.388,
+        52.52
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "theater",
+      "musical",
+      "show"
+    ],
+    "rating": 4.4
+  },
+  {
+    "name": "Badeschiff Berlin",
+    "category": "sport",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.453,
+        52.495
+      ]
+    },
+    "address": {
+      "district": "Treptow",
+      "city": "Berlin"
+    },
+    "tags": [
+      "swimming",
+      "river",
+      "summer"
+    ],
+    "rating": 4.0
+  },
+  {
+    "name": "Stadtbad Neukölln",
+    "category": "sport",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.435,
+        52.478
+      ]
+    },
+    "address": {
+      "district": "Neukölln",
+      "city": "Berlin"
+    },
+    "tags": [
+      "swimming",
+      "historic",
+      "sauna"
+    ],
+    "rating": 4.5
+  },
+  {
+    "name": "Olympiastadion Berlin",
+    "category": "sport",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.24,
+        52.515
+      ]
+    },
+    "address": {
+      "district": "Westend",
+      "city": "Berlin"
+    },
+    "tags": [
+      "stadium",
+      "football",
+      "history"
+    ],
+    "rating": 4.6
+  },
+  {
+    "name": "Cinema Babylon",
+    "category": "culture",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.412,
+        52.526
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "cinema",
+      "arthouse",
+      "historic"
+    ],
+    "rating": 4.5
+  },
+  {
+    "name": "St. Hedwigs-Kathedrale",
+    "category": "sight",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.395,
+        52.516
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "church",
+      "architecture",
+      "history"
+    ],
+    "rating": 4.5
+  },
+  {
+    "name": "Humboldt Forum",
+    "category": "museum",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        13.399,
+        52.517
+      ]
+    },
+    "address": {
+      "district": "Mitte",
+      "city": "Berlin"
+    },
+    "tags": [
+      "museum",
+      "culture",
+      "palace"
+    ],
+    "rating": 4.4
+  }
+]
