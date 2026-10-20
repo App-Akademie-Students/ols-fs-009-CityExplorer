@@ -8,7 +8,7 @@ public class Place
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
-    public string? Id { get; set; }
+    public string? Id { get; set; }   // ein String oder null
 
     [BsonElement("name")]
     public string Name { get; set; } = string.Empty;
@@ -29,8 +29,8 @@ public class Place
     [BsonElement("rating")]
     public double Rating { get; set; }
 
-    // Zusätzliche, frei wählbare Eigenschaften (z. B. openingHours, website)
-    [BsonElement("properties")]
-    [BsonIgnoreIfNull]
-    public Dictionary<string, object>? Properties { get; set; }
+    // // Zusätzliche, frei wählbare Eigenschaften (z. B. openingHours, website)
+    // [BsonElement("properties")]
+    // [BsonIgnoreIfNull]
+    // public Dictionary<string, object>? Properties { get; set; }
 }

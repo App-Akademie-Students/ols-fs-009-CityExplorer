@@ -36,6 +36,17 @@ cd backend/CityExplorer.Api
 dotnet add package MongoDB.Driver
 ```
 
+## Pakete wiederherstellen
+
+`dotnet restore` lädt die NuGet-Pakete herunter, die das Projekt laut `.csproj` benötigt:
+
+```powershell
+cd backend/CityExplorer.Api
+dotnet restore
+```
+
+Das ist zum Beispiel nach dem Klonen des Repositories nötig. `dotnet run` führt die Wiederherstellung bei Bedarf automatisch aus.
+
 ## Anwendung starten und testen
 
 Das Backend wird im Projektordner mit folgendem Befehl gestartet:
