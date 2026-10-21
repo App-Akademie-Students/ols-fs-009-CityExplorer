@@ -18,6 +18,4 @@ public class MongoDbService
     // see PlacesService for usage of GetCollection method
    // public IMongoCollection<T> GetCollection<T>(string name) => _database.GetCollection<T>(name);
 
-   
-
 }
