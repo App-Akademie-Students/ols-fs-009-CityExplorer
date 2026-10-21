@@ -151,3 +151,11 @@ Später folgen unter anderem:
 - Suche nach Eigenschaften
 - Umkreissuche
 - Frontend mit JavaScript
+
+
+## Mit Swagger die RestAPI testen
+dotnet add package Swashbuckle.AspNetCore
+
+## C# MongoDB Docs
+* https://www.mongodb.com/docs/drivers/csharp/current/crud/query/find/
+  
