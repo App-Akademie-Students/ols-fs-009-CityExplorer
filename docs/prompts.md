@@ -10,6 +10,8 @@ Sammlung der verwendeten Claude-Prompts im Projekt City Explorer.
 | 2 | 2026-10-20 | – | MongoDB-Modellklassen | Place und Address im Ordner backend/Model erstellt |
 | 3 | 2026-10-20 | 15:38 | Fehlende Uhrzeit in prompts.md | Ursache erklärt, Eintrag mit echter Uhrzeit ergänzt |
 | 4 | 2026-10-20 | 15:50 | README: dotnet restore | Abschnitt „Pakete wiederherstellen“ in README.md ergänzt |
+| 5 | 2026-10-21 | 12:04 | Fehler in MongoDbService | Syntaxfehler in Zeile 10 erklärt (keine Codeänderung) |
+| 6 | 2026-10-21 | 12:06 | MongoDbService korrigiert | Zeile 10 zur Property `public IMongoDatabase Database { get; }` korrigiert |
 
 ## Vorlage für neue Einträge
 
@@ -86,3 +88,31 @@ Ergänze die readme.md um die wichtigen INformation:dotnet restore lädt die NuG
 ```
 
 **Ergebnis:** In `README.md` den Abschnitt „Pakete wiederherstellen“ mit Erklärung und Befehl `dotnet restore` ergänzt.
+
+## 5. Fehler in MongoDbService
+
+**Datum:** 2026-10-21, 12:04 Uhr
+
+**Ziel:** Herausfinden, was in `MongoDbService` nicht stimmt.
+
+**Prompt:**
+
+```
+was stimmt nicht MongoDbService?
+```
+
+**Ergebnis:** Zeile 10 mischt Feld- und Property-Syntax und ist ungültig; Lösungsvorschlag erklärt, Code nicht geändert.
+
+## 6. MongoDbService korrigiert
+
+**Datum:** 2026-10-21, 12:06 Uhr
+
+**Ziel:** Den Syntaxfehler in `MongoDbService` beheben.
+
+**Prompt:**
+
+```
+passe es an
+```
+
+**Ergebnis:** In `MongoDbService.cs` Zeile 10 durch die Property `public IMongoDatabase Database { get; }` ersetzt.

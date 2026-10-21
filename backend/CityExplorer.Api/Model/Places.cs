@@ -1,8 +1,7 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver.GeoJsonObjectModel;
-
-namespace CityExplorer.Model;
+namespace CityExplorer.Api.Model;
 
 public class Place
 {

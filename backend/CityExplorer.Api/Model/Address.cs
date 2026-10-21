@@ -1,6 +1,6 @@
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace CityExplorer.Model;
+namespace CityExplorer.Api.Model;
 
 public class Address
 {
