@@ -234,3 +234,17 @@ bitte frontend mit karte, openstreetmap + leaflet
 ```
 
 **Ergebnis:** Leaflet 1.9.4 per CDN (unpkg) in `index.html` eingebunden, Kartencontainer über der Orteliste. `app.js`: OSM-Kacheln, ein Marker mit Popup pro gefundenem Ort (Karte passt den Ausschnitt an), Klick auf eine Karte zoomt zum Ort, Klick auf die Karte setzt die Position für die Umkreissuche. Der alte „Auf Karte anzeigen“-Link entfällt. `style.css` ergänzt. Nicht gebaut oder getestet.
+
+## 15. Kommentare und README
+
+**Datum:** 2026-10-22, 13:00 Uhr
+
+**Ziel:** Kommentare ergänzen und die README anpassen.
+
+**Prompt:**
+
+```
+ergänze kommentare und passe gegebenen falls die readme.md an
+```
+
+**Ergebnis:** Kommentare zu den Funktionen in `frontend/app.js` und zu den Endpunkten im `PlacesController` ergänzt. README: Leaflet/OpenStreetMap, Frontend wird vom .NET-Server ausgeliefert, Start-URLs, Frontend-Funktionen und Endpunkttabelle der REST API ergänzt; Pfad `/api/places` zu `/places` korrigiert. Nicht gebaut oder getestet.

@@ -9,6 +9,7 @@ Die Anwendung verwendet:
 - .NET
 - MongoDB
 - HTML / CSS / JavaScript
+- Leaflet + OpenStreetMap (Karte)
 
 ## Entwicklungsumgebung
 
@@ -56,7 +57,19 @@ cd backend/CityExplorer.Api
 dotnet run
 ```
 
-Die URL und der Port werden beim Start in der Konsole ausgegeben.
+Die URL und der Port werden beim Start in der Konsole ausgegeben. Mit dem Profil `http` läuft die Anwendung auf `http://localhost:5180`:
+
+```powershell
+dotnet run --launch-profile http
+```
+
+| URL | Inhalt |
+| --- | --- |
+| `http://localhost:5180/` | Frontend mit Karte |
+| `http://localhost:5180/swagger` | Swagger UI zum Testen der REST API (nur in Development) |
+| `http://localhost:5180/places` | REST API |
+
+MongoDB muss dabei laufen.
 
 ## Ziel
 
@@ -89,8 +102,27 @@ MongoDB C# Driver
 MongoDB
 ```
 
-ASP.NET Core wird dabei ausschließlich für das Backend und die REST API verwendet.  
-Das Frontend wird separat mit HTML, CSS und JavaScript umgesetzt.
+Das Frontend (Ordner `frontend`) besteht aus reinem HTML, CSS und JavaScript ohne Build-Schritt.  
+Es wird vom ASP.NET-Core-Server als statische Dateien mit ausgeliefert (siehe `Program.cs`) und ruft die REST API relativ unter `/places` auf. Frontend und API laufen also auf demselben Server.
+
+Die Karte nutzt [Leaflet](https://leafletjs.com/) (per CDN geladen) mit Kacheln von [OpenStreetMap](https://www.openstreetmap.org/). Dafür wird eine Internetverbindung benötigt.
+
+### Frontend
+
+- Orte werden als Marker auf der Karte und als Karten in einer Liste angezeigt.
+- Textsuche (Name, Tag, Bezirk) und Kategorie-Filter.
+- Umkreissuche: Position per Klick auf die Karte, über „Mein Standort“ oder durch Eingabe der Koordinaten festlegen.
+- Klick auf einen Ort in der Liste zoomt zum Marker und öffnet das Popup.
+
+### REST API
+
+| Methode | Pfad | Beschreibung |
+| --- | --- | --- |
+| GET | `/places` | alle Orte |
+| GET | `/places/{id}` | ein Ort (404, wenn nicht vorhanden) |
+| GET | `/places/category/{category}` | Orte einer Kategorie |
+| GET | `/places/nearby?latitude=..&longitude=..&maxDistanceInMeters=..` | Orte im Umkreis (Standard: 1000 m) |
+| POST | `/places` | Ort anlegen |
 
 ## MongoDB
 
@@ -142,15 +174,16 @@ Zunächst soll das Backend:
 Beispiel:
 
 ```http
-GET /api/places
+GET /places
 ```
 
-Später folgen unter anderem:
+Inzwischen umgesetzt sind außerdem:
 
 - Suche nach Kategorie
-- Suche nach Eigenschaften
 - Umkreissuche
-- Frontend mit JavaScript
+- Frontend mit JavaScript und Karte
+
+Noch offen ist unter anderem die Suche nach weiteren Eigenschaften.
 
 
 ## Mit Swagger die RestAPI testen

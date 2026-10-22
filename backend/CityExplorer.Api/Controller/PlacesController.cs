@@ -15,6 +15,7 @@ public class PlacesController : ControllerBase
         _placeService = placeService;
     }
 
+    // GET /places - all places
     [HttpGet]
     public async Task<List<PlaceDto>> GetAllPlaces()
     {
@@ -22,6 +23,7 @@ public class PlacesController : ControllerBase
         return places;
     }
 
+    // GET /places/{id} - one place, 404 if the id does not exist
     [HttpGet("{id}")]
     public async Task<ActionResult<PlaceDto>> GetPlaceById(string id)
     {
@@ -33,18 +35,21 @@ public class PlacesController : ControllerBase
         return place;
     }
 
+    // GET /places/category/{category} - places of one category
     [HttpGet("category/{category}")]   
     public async Task<List<PlaceDto>> GetPlacesByCategory(string category)
     {
         return await _placeService.GetPlacesByCategoryAsync(category);
     }
 
+    // GET /places/nearby?latitude=..&longitude=..&maxDistanceInMeters=.. - places within the radius
     [HttpGet("nearby")]
     public async Task<List<PlaceDto>> GetNearbyPlaces(double latitude, double longitude, double maxDistanceInMeters = 1000)
     {
         return await _placeService.GetNearbyPlacesAsync(latitude, longitude, maxDistanceInMeters);
     }
 
+    // POST /places - creates a place and returns 201 with a link to GET /places/{id}
     [HttpPost]
     public async Task<ActionResult<Place>> CreatePlace(Place place)
     {

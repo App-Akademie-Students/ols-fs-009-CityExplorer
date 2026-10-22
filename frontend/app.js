@@ -1,3 +1,4 @@
+// Same origin as the page: the API serves this frontend
 const API_URL = "/places";
 
 const searchInput = document.getElementById("search");
@@ -8,6 +9,7 @@ const distanceInput = document.getElementById("distance");
 const statusEl = document.getElementById("status");
 const placesEl = document.getElementById("places");
 
+// Places returned by the last API call (text search filters this list in the browser)
 let currentPlaces = [];
 
 // Leaflet map with OpenStreetMap tiles
@@ -16,7 +18,9 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
+// One layer for all place markers, so they can be cleared at once
 const markerLayer = L.layerGroup().addTo(map);
+// Red marker showing the position of the nearby search
 let searchMarker = null;
 
 // Click on the map sets the position for the nearby search
@@ -26,6 +30,7 @@ map.on("click", (e) => {
   updateSearchMarker();
 });
 
+// Moves the search marker to the coordinates in the input fields (creates it on first use)
 function updateSearchMarker() {
   const latlng = [Number(latitudeInput.value), Number(longitudeInput.value)];
   if (searchMarker) {
@@ -36,6 +41,7 @@ function updateSearchMarker() {
   }
 }
 
+// Shows one marker with popup per place and zooms the map to all of them
 function renderMap(places) {
   markerLayer.clearLayers();
   places.forEach((place) => {
@@ -44,6 +50,7 @@ function renderMap(places) {
       `<strong>${escapeHtml(place.name)}</strong><br>${escapeHtml(place.category)}<br>` +
       `${escapeHtml(place.district)}, ${escapeHtml(place.city)}<br>Bewertung: ${place.rating} ★`
     );
+    // Remember the marker so a click on the place card can open its popup
     place.marker = marker;
   });
   if (places.length > 0) {
@@ -51,12 +58,14 @@ function renderMap(places) {
   }
 }
 
+// Popups are HTML, so API data is escaped before it is inserted
 function escapeHtml(text) {
   const div = document.createElement("div");
   div.textContent = text;
   return div.innerHTML;
 }
 
+// Loads places from the given API URL and renders them
 async function fetchPlaces(url) {
   setStatus("Lade Orte ...");
   try {
@@ -73,11 +82,13 @@ async function fetchPlaces(url) {
   }
 }
 
+// Shows a message above the map; isError colors it red
 function setStatus(text, isError = false) {
   statusEl.textContent = text;
   statusEl.className = isError ? "error" : "";
 }
 
+// Applies the text search to the loaded places and updates list and map
 function render() {
   const term = searchInput.value.trim().toLowerCase();
   const filtered = currentPlaces.filter((p) =>
@@ -93,6 +104,7 @@ function render() {
   setStatus(`${filtered.length} Orte gefunden`);
 }
 
+// Builds the card element for one place
 function createCard(place) {
   const card = document.createElement("article");
   card.className = "card";
@@ -128,6 +140,7 @@ function createCard(place) {
   return card;
 }
 
+// Initial load: fetches all places and fills the category dropdown from them
 async function loadCategories() {
   try {
     const response = await fetch(API_URL);
@@ -146,6 +159,7 @@ async function loadCategories() {
   }
 }
 
+// Loads all places without any filter
 function loadAll() {
   fetchPlaces(API_URL);
 }
