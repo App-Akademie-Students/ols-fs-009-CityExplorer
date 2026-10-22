@@ -12,6 +12,7 @@ Sammlung der verwendeten Claude-Prompts im Projekt City Explorer.
 | 4 | 2026-10-20 | 15:50 | README: dotnet restore | Abschnitt „Pakete wiederherstellen“ in README.md ergänzt |
 | 5 | 2026-10-21 | 12:04 | Fehler in MongoDbService | Syntaxfehler in Zeile 10 erklärt (keine Codeänderung) |
 | 6 | 2026-10-21 | 12:06 | MongoDbService korrigiert | Zeile 10 zur Property `public IMongoDatabase Database { get; }` korrigiert |
+| 7 | 2026-10-21 | 17:48 | .NET-Version aktualisieren | Nutzer hat bestätigt, bei .NET 10 zu bleiben, da .NET 11 derzeit nur als Preview verfügbar ist. |
 
 ## Vorlage für neue Einträge
 
@@ -116,3 +117,17 @@ passe es an
 ```
 
 **Ergebnis:** In `MongoDbService.cs` Zeile 10 durch die Property `public IMongoDatabase Database { get; }` ersetzt.
+
+## 7. .NET-Version aktualisieren
+
+**Datum:** 2026-10-21, 17:48 Uhr
+
+**Ziel:** Das Projekt auf eine neuere .NET-Version aktualisieren.
+
+**Prompt:**
+
+```
+Upgrade to a newer version of .NET
+```
+
+**Ergebnis:** Das Backend bleibt auf `net10.0`. Der Nutzer hat das Upgrade abgelehnt, da `net11.0` derzeit nur als Preview-Version und nicht für Produktion empfohlen ist.
