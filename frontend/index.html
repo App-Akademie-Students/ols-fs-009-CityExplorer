@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Explorer</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>City Explorer</h1>
+  </header>
+
+  <main>
+    <section class="filters">
+      <div class="filter">
+        <label for="search">Suche (Name, Tag, Bezirk)</label>
+        <input type="text" id="search" placeholder="z. B. Park">
+      </div>
+
+      <div class="filter">
+        <label for="category">Kategorie</label>
+        <select id="category">
+          <option value="">Alle</option>
+        </select>
+      </div>
+
+      <fieldset class="nearby">
+        <legend>In der Nähe</legend>
+        <input type="number" id="latitude" step="any" placeholder="Breitengrad" value="52.5200">
+        <input type="number" id="longitude" step="any" placeholder="Längengrad" value="13.4050">
+        <input type="number" id="distance" min="1" placeholder="Radius (m)" value="2000">
+        <button type="button" id="locate">Mein Standort</button>
+        <button type="button" id="nearbyBtn">Suchen</button>
+      </fieldset>
+
+      <button type="button" id="reset">Zurücksetzen</button>
+    </section>
+
+    <p id="status"></p>
+    <div id="map"></div>
+    <section id="places" class="places"></section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver.GeoJsonObjectModel;
@@ -16,6 +17,8 @@ public class Place
     public string Category { get; set; } = string.Empty;
 
     // GeoJSON-Point [Längengrad, Breitengrad] – Grundlage für 2dsphere-Abfragen
+
+    
     [BsonElement("location")]
     public GeoJsonPoint<GeoJson2DGeographicCoordinates> Location { get; set; } = null!;
 
